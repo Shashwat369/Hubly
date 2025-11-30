@@ -1,0 +1,449 @@
+.chatbot-settings-container {
+  padding: 30px;
+  background-color: #fff;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+}
+
+.page-title {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.chatbot-layout {
+  display: flex;
+  gap: 50px;
+}
+
+/* --- LEFT: PREVIEW SECTION --- */
+.preview-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.chat-preview-card {
+  width: 320px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  background: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+}
+
+.preview-header {
+  padding: 15px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.preview-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+}
+
+.preview-logo-circle {
+  width: 30px;
+  height: 30px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preview-body {
+  padding: 20px;
+  flex: 1;
+}
+
+.preview-bot-msg-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.preview-avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.preview-avatar.invisible {
+  visibility: hidden;
+}
+
+.preview-bubble {
+  background: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  color: #333;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.preview-form-card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.preview-form-card h4 {
+  margin: 0 0 10px 0;
+  font-size: 12px;
+}
+
+.preview-input-group label {
+  display: block;
+  font-size: 10px;
+  color: #888;
+  margin-bottom: 2px;
+}
+
+.preview-input-group input {
+  width: 100%;
+  border: 1px solid #eee;
+  padding: 5px;
+  font-size: 11px;
+  margin-bottom: 8px;
+}
+
+.preview-submit-btn {
+  width: 100%;
+  background-color: #1e3a8a;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.preview-footer {
+  background: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #aaa;
+  font-size: 12px;
+  border-top: 1px solid #eee;
+}
+
+.preview-teaser {
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  width: 250px;
+  position: relative;
+  font-size: 11px;
+  color: #555;
+}
+
+.close-x {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 14px;
+  color: #999;
+}
+
+/* --- RIGHT: SETTINGS PANEL --- */
+.settings-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 400px;
+}
+
+.setting-card {
+  background: white;
+  border: 1px solid #eee;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
+}
+
+.setting-card h3 {
+  font-size: 13px;
+  margin: 0 0 15px 0;
+  font-weight: 600;
+}
+
+.color-options {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.color-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.color-circle.selected {
+  border-color: #3b82f6;
+}
+
+.color-circle.white {
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+.color-circle.black {
+  background: #000;
+}
+
+.color-circle.navy {
+  background: #33475B;
+}
+
+.color-circle.grey {
+  background: #EEEEEE;
+}
+
+.hex-input-wrapper {
+  background: #f9f9f9;
+  padding: 8px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.color-box {
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.hex-input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-weight: 600;
+  color: #333;
+}
+
+.input-row {
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.input-row input {
+  border: none;
+  background: transparent;
+  width: 100%;
+  outline: none;
+  font-size: 13px;
+}
+
+.edit-icon {
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.form-edit-group input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #eee;
+  outline: none;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.save-settings-btn {
+  background: #1e3a8a;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* --- NEW: Timer Inputs CSS --- */
+.timer-inputs {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  justify-content: center;
+}
+
+.timer-field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timer-field label {
+  font-size: 10px;
+  color: #888;
+  margin-bottom: 4px;
+}
+
+.timer-field input {
+  width: 50px;
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.timer-colon {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ccc;
+  margin-top: 10px;
+}
+
+.welcome-msg-wrapper {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.char-count {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 10px;
+  color: #999;
+}
+
+.welcome-msg-input-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.wave-icon {
+  font-size: 16px;
+  padding-top: 5px;
+}
+
+.welcome-msg-input-row textarea {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: 13px;
+  color: #333;
+  resize: none;
+}
+
+
+@media (max-width: 768px) {
+
+
+  .chatbot-layout {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+ 
+  .preview-section {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .settings-panel {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .preview-header {
+    height: 55px !important;
+    padding: 0 12px !important;
+  }
+
+  .preview-brand span {
+    font-size: 16px !important;
+  }
+
+  .preview-logo-circle {
+    height: 28px !important;
+    width: 28px !important;
+  }
+
+  .preview-bubble {
+    max-width: 80%;
+    font-size: 14px !important;
+    padding: 8px 12px;
+  }
+
+
+  .preview-form-card {
+    padding: 15px !important;
+    border-radius: 10px !important;
+  }
+
+  .preview-form-card input {
+    height: 38px !important;
+    font-size: 14px !important;
+  }
+
+
+  .preview-footer {
+    padding: 0 10px !important;
+    height: 50px !important;
+  }
+
+  .preview-footer span {
+    font-size: 13px !important;
+  }
+
+ 
+  .preview-teaser {
+    width: 85% !important;
+    left: 50% !important;
+    transform: translateX(-50%);
+    bottom: 20px !important;
+    padding: 10px 14px !important;
+    font-size: 13px !important;
+  }
+
+  .teaser-avatar {
+    height: 32px !important;
+    width: 32px !important;
+  }
+}

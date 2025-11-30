@@ -1,0 +1,29 @@
+.Brands{
+    height: 15vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ebf1f9;
+    margin-top: 65px;
+    padding: 30px ;
+}
+
+.Brands img{
+    width: 133px;
+    height: 48px;
+}
+
+@media (max-width: 1024px) {
+.Brands{
+  display: none;
+}
+}
+
+
+
+@media (max-width: 768px) {
+.Brands{
+  display: none;
+}
+}

@@ -1,0 +1,83 @@
+
+.navbar{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    background-color: #f5f9fd ;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+.company-logo{
+      display: flex;
+  align-items: center;
+  gap: 6px;
+  width: 142px;
+  height: 45px;
+}
+.company-logo img{
+    height: 45px;
+    width: 45px;
+    object-fit: contain;
+}
+
+.logo-heading{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 140%;
+    letter-spacing: 0;
+    color:#184E7F ;
+}
+
+
+
+.nav-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.nav-links .login-btn{
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: none;
+    color: #36364A;
+    font-weight: 500;
+    line-height: 140%;
+    font-size: 16px;
+    background-color: #f6fafd;
+}
+.nav-links .register-btn{
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: none;
+    background-color: #244779;
+    color: #ffffff;
+    font-weight: 500;
+    line-height: 140%;
+}
+.hamburger{
+  display: none;
+}
+
+
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 20px; 
+  }
+  .hamburger{
+    display: block;
+  }
+  .desktop-only { display: none; }
+  .mobile-menu-icon { display: flex; }
+}
