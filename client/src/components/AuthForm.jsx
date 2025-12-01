@@ -20,7 +20,7 @@ const AuthForm = () => {
     password: ''
   });
   const API = import.meta.env.VITE_API_URL;
-
+console.log("API =", import.meta.env.VITE_API_URL);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -41,6 +41,7 @@ const AuthForm = () => {
         const res = await axios.post(`${API}/api/users/login`, loginPayload);
 
         
+
 
         const { token, ...userData } = res.data;
 

@@ -26,6 +26,7 @@ const Login = () => {
     try {
 
     const API = import.meta.env.VITE_API_URL;
+console.log("API URL =", import.meta.env.VITE_API_URL);
 
 const res = await axios.post(`${API}/api/auth/login`, formData);
 
