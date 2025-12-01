@@ -19,6 +19,8 @@ const AuthForm = () => {
     email: '',
     password: ''
   });
+  const API = import.meta.env.VITE_API_URL;
+
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -36,7 +38,8 @@ const AuthForm = () => {
           password: formData.password
         };
 
-        const res = await axios.post('http://localhost:5000/api/users/login', loginPayload);
+        const res = await axios.post(`${API}/api/users/login`, loginPayload);
+
         
 
         const { token, ...userData } = res.data;
@@ -51,7 +54,8 @@ const AuthForm = () => {
 
       } else {
        
-        const res = await axios.post('http://localhost:5000/api/users/signup', formData);
+        const res = await axios.post(`${API}/api/users/signup`, formData);
+
         
         alert(res.data.message); 
         setIsLogin(true); 

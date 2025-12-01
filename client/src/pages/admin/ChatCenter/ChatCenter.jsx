@@ -17,7 +17,8 @@ const ChatCenter = () => {
 
   const [modal, setModal] = useState({ show: false, type: "", value: null });
 
-  const API_URL = "http://localhost:5000/api";
+const API_URL = import.meta.env.VITE_API_URL + "/api";
+
   const messagesEndRef = useRef(null);
   let systemMessageShown = false;
 

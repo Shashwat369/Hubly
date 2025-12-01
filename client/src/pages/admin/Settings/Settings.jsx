@@ -28,11 +28,12 @@ const Settings = () => {
   });
 
   const token = localStorage.getItem("token");
+  const API = import.meta.env.VITE_API_URL;
 
   useEffect(() => {
     const fetchProfile = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/users/me", {
+        const res = await fetch(`${API}/api/users/me`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -65,7 +66,7 @@ const Settings = () => {
   const handleSave = async (e) => {
     e.preventDefault();
 
-    const res = await fetch("http://localhost:5000/api/users/update", {
+    const res = await fetch(`${API}/api/users/update`,{
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

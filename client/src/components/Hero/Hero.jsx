@@ -20,7 +20,6 @@ const Hero = () => {
       </div>
     </div>
     <div className="hero-image">
-      {/* Placeholder for the meeting/dashboard collage */}
    <img src={heroMain} alt="Hero Main" />
    <img src={comment} alt="comment" />
    <img src={graph} alt="graph" />

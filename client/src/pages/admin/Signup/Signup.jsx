@@ -47,10 +47,9 @@ const Signup = () => {
         password: form.password,
       };
 
-      const res = await axios.post(
-        "http://localhost:5000/api/auth/signup",
-        payload
-      );
+      const API = import.meta.env.VITE_API_URL;
+
+      const res = await axios.post(`${API}/api/auth/signup`, payload);
 
       console.log("Signup Success:", res.data);
       alert(res.data.message || "Account created successfully!");

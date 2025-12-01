@@ -11,7 +11,7 @@ const Dashboard = () => {
   const [activeTab, setActiveTab] = useState("All Tickets");
   const [searchQuery, setSearchQuery] = useState("");
 
-  const API_URL = "http://localhost:5000/api/tickets";
+const API_URL = import.meta.env.VITE_API_URL + "/api/tickets";
 
   useEffect(() => {
     const fetchTickets = async () => {

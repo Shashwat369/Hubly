@@ -22,7 +22,8 @@ const Teams = () => {
     password: "password123",
   });
 
-  const API_URL = "http://localhost:5000/api";
+  const API_URL = import.meta.env.VITE_API_URL + "/api";
+
   const loggedInUser = JSON.parse(localStorage.getItem("user"));
   const isAdmin = loggedInUser?.role === "admin";
 

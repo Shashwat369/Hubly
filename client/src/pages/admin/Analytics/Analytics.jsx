@@ -1,4 +1,4 @@
-// -----------------[ FINAL PERFECT VERSION ]----------------------
+
 
 import React, { useEffect, useState } from "react";
 import "./Analytics.css";
@@ -24,7 +24,8 @@ ChartJS.register(
   Legend
 );
 
-const API_URL = "http://localhost:5000/api/analytics";
+const API_URL = import.meta.env.VITE_API_URL + "/api/analytics";
+
 
 const Analytics = () => {
   const [stats, setStats] = useState({

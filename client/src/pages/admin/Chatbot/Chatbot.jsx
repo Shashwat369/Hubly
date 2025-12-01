@@ -26,7 +26,8 @@ const Chatbot = () => {
   });
 
   const [loading, setLoading] = useState(true);
-  const API_URL = "http://localhost:5000/api/settings";
+ const API_URL = import.meta.env.VITE_API_URL + "/api/settings";
+
 
 
   useEffect(() => {
